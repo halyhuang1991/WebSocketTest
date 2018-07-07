@@ -1,0 +1,7 @@
+cd CSharp
+dotnet new console
+dotnet run
+
+dotnet add package WebSocketSharp --version 1.0.3-rc11 
+
+//dotnet add package ./bin/Debug/websocketsharp.1.0.3-rc11.nupkg

@@ -1,0 +1,12 @@
+npm install websocket --save-dev
+npm install express --save-dev
+node WebSocketServer.js
+node WebSocketClient.js
+
+
+echo "# WebSocketTest" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:halyhuang1991/WebSocketTest.git
+git push -u origin master
