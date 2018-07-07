@@ -25,7 +25,7 @@ namespace CSharp
                     Console.WriteLine("Laputa Close!");
 
                 };
-                ws.SetCredentials ("nobita", "password", true);  
+                //ws.SetCredentials ("nobita", "password", true);  
                 ws.Connect();
                 ws.Send("BALUS");
                 Console.ReadKey(true);
