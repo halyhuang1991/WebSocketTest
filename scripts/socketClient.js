@@ -7,6 +7,8 @@ function openClick() {
     var url="ws://localhost:8880/";
     //url="ws://nobita:password@localhost:8880/";//验证
     //var ws = new WebSocket("ws://my_token@example.com/service");
+    // var authToken = 'R3YKZFKBVi';
+    // document.cookie = 'X-Authorization=' + authToken + '; path=/';
     ws = new WebSocket(url, 'echo-protocol');
 
     ws.onopen = function (evt) {
