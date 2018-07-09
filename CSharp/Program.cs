@@ -20,6 +20,7 @@ namespace CSharp
             protected override void OnMessage(MessageEventArgs e)
             {
                 Console.Write(e.Data);
+                Sessions.Broadcast ("Broadcast:"+e.Data + _name);//广播
                 var msg = e.Data == "BALUS"
                           ? "I've been balused already..."
                           : "I'm not available now.";
@@ -41,6 +42,8 @@ namespace CSharp
             // wssv.SslConfiguration.ServerCertificate = new X509Certificate2(cert, passwd);
             wssv.AddWebSocketService<Laputa>("/Laputa");
             wssv.AddWebSocketService<Laputa>("/");
+            //--------------加用户验证    客户端发送验证
+
             // wssv.AuthenticationSchemes = AuthenticationSchemes.Basic;
             // wssv.Realm = "WebSocket Test";
             // wssv.UserCredentialsFinder = id =>
@@ -52,8 +55,9 @@ namespace CSharp
             //            ? new NetworkCredential(name, "password", "gunfighter")
             //            : null; // If the user credentials are not found.
             // };
+
             wssv.Start();
-           
+           //---------------客户端发送信息
             Client.SendMsg();
             Console.ReadKey(true);
             wssv.Stop();

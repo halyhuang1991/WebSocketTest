@@ -4,7 +4,9 @@ function openClick() {
         console.log("This browser does not support WebSocket.");
         return;
     }
-    ws = new WebSocket("ws://localhost:8880/", 'echo-protocol');
+    var url="ws://localhost:8880/";
+    //url="ws://nobita:password@localhost:8880/";//验证
+    ws = new WebSocket(url, 'echo-protocol');
 
     ws.onopen = function (evt) {
         console.log("ws Connection open ...");

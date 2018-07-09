@@ -4,7 +4,8 @@ namespace CSharp
 {
     public class Client{
         public static void SendMsg(){
-            using (var ws = new WebSocket("ws://localhost:8880/Laputa?name=nobita"))
+            string url="ws://localhost:8880/Laputa?name=nobita";
+            using (var ws = new WebSocket(url))
             {
                 ws.OnOpen += (sender, e) =>
                 {
