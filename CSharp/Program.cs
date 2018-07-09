@@ -14,6 +14,7 @@ namespace CSharp
             protected override void OnOpen()
             {
                 _name = Context.QueryString["name"];
+                Console.WriteLine(Context.Origin);
                 Console.WriteLine(_name);
             }
             protected override void OnMessage(MessageEventArgs e)
