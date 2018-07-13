@@ -20,7 +20,7 @@ namespace CSharp
             protected override void OnMessage(MessageEventArgs e)
             {
                 Console.Write(e.Data);
-                Sessions.Broadcast ("Broadcast:"+e.Data + _name);//广播
+                Sessions.Broadcast ("Broadcast:"+e.Data + _name);//广播给所有用户
                 var msg = e.Data == "BALUS"
                           ? "I've been balused already..."
                           : "I'm not available now.";
