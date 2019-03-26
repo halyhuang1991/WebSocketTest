@@ -29,7 +29,7 @@ namespace CSharp
                 //ws.SetCredentials ("nobita", "password", true);  
                 ws.Connect();
                 ws.Send("BALUS");
-                Console.ReadKey(true);
+                //Console.ReadKey(true);
             }
         }
 

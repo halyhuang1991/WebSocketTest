@@ -26,6 +26,10 @@ namespace CSharp
                           : "I'm not available now.";
 
                 Send(msg);
+                // int i=0;
+                // System.Threading.Timer timer=new System.Threading.Timer(s=>{
+                //     Send(msg+i);i++;
+                //   }, null, 0, 1000);
             }
         }
         static void Main(string[] args)
@@ -59,8 +63,9 @@ namespace CSharp
             wssv.Start();
            //---------------客户端发送信息
             Client.SendMsg();
-            Console.ReadKey(true);
+            Console.ReadLine();
             wssv.Stop();
+           
         }
     }
 }

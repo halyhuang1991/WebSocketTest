@@ -18,13 +18,13 @@ namespace CSharp{
                 xNewElem.SetAttribute("value", appValue);
                 xNode.AppendChild(xNewElem);
             }
-            xDoc.Save(@"D:\C\github\WebSocketTest\CSharp\App,config");
+            xDoc.Save(@"D:\C\github\WebSocketTest\CSharp\App.config");
         }
 
         public static string GetAppConfig(string appKey)
         {
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(@"D:\C\github\WebSocketTest\CSharp\App,config");
+            xDoc.Load(@"D:\C\github\WebSocketTest\CSharp\App.config");
 
             var xNode = xDoc.SelectSingleNode("//appSettings");
 

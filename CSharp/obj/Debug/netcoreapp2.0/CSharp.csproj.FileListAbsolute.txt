@@ -9,3 +9,4 @@ D:\C\github\WebSocketTest\CSharp\obj\Debug\netcoreapp2.0\CSharp.AssemblyInfoInpu
 D:\C\github\WebSocketTest\CSharp\obj\Debug\netcoreapp2.0\CSharp.AssemblyInfo.cs
 D:\C\github\WebSocketTest\CSharp\obj\Debug\netcoreapp2.0\CSharp.dll
 D:\C\github\WebSocketTest\CSharp\obj\Debug\netcoreapp2.0\CSharp.pdb
+D:\C\github\WebSocketTest\CSharp\bin\Debug\netcoreapp2.0\CSharp.dll.config
